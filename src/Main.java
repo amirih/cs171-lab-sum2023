@@ -1,9 +1,16 @@
 
+import cs171.sum2023.lab2.FileManager;
+
+
 public class Main {
     public static void main(String[] args) {
+        String input1= "input1.txt";
+        String input2 = "input2.txt";
+        String output = "output.txt";
 
-        Person person = new Person("hossein", 33);
-        person.talk("We are done the first");
+        FileManager fileManager = new FileManager();
+//        fileManager.customize(input1, input2);
+        fileManager.customize(input1, input2, output);
 
     }
 }
