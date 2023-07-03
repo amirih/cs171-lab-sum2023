@@ -1,5 +1,3 @@
-### SourceCode ###
-src/
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
@@ -29,4 +27,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+
 
