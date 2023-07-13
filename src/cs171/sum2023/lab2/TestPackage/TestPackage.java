@@ -1,4 +1,4 @@
-package cs171.sum2023.lab2;
+package cs171.sum2023.lab2.TestPackage;
 
 public class TestPackage {
     public void printPackage(){

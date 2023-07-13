@@ -1,5 +1,5 @@
 // This class represents a rectangle shape
-package cs171.sum2023.lab1;
+package cs171.sum2023.lab1.A1;
 
 public class Rectangle {
     private double L; // the length of the rectangle

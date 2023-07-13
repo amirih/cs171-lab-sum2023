@@ -1,4 +1,4 @@
-package cs171.sum2023.lab3;
+package cs171.sum2023.lab3.Inheritance;
 
 public class ClassB extends ClassA {
     void sayName(){

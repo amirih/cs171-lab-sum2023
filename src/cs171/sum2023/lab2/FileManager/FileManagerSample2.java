@@ -1,4 +1,4 @@
-package cs171.sum2023.lab2;
+package cs171.sum2023.lab2.FileManager;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

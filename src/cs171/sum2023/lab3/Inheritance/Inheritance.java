@@ -1,4 +1,4 @@
-package cs171.sum2023.lab3;
+package cs171.sum2023.lab3.Inheritance;
 
 public class Inheritance {
     public static void main(String[] args) {

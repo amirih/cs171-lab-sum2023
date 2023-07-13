@@ -1,4 +1,4 @@
-package cs171.sum2023.lab3;
+package cs171.sum2023.lab3.A2;
 
 import java.util.Random;
 

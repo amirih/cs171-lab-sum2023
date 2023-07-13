@@ -1,7 +1,7 @@
-package cs171.sum2023.lab2;
+package cs171.sum2023.lab2.A1;
 
-import cs171.sum2023.lab1.Circle;
-import cs171.sum2023.lab1.Rectangle;
+import cs171.sum2023.lab1.A1.Circle;
+import cs171.sum2023.lab1.A1.Rectangle;
 
 public class ShapeTester {
     public ShapeTester() {
