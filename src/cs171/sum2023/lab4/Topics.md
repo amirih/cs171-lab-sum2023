@@ -45,3 +45,8 @@ Abstraction is the quality of dealing with ideas rather than events. It basicall
 2. **Interfaces:** Interfaces are a completely abstract class that can only have abstract methods. In Java, you use the interface keyword to create an interface. All methods in an interface are implicitly public and abstract (even if you don't explicitly use these keywords).
 
 **See cs171.sum2023.lab4.Abstraction**
+
+### Practice:
+1. SocialMedia
+2. DataBase
+3. Sort
