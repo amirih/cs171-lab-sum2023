@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         // Create a BubbleSort object
-        BubbleSort bubbleSort = new BubbleSort();
+        CSort bubbleSort = new CSort();
         // Define an array to sort
         int[] array = {5, 3, 8, 4, 2};
 
