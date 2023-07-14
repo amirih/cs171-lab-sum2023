@@ -2,6 +2,7 @@ package cs171.sum2023.lab5.TypeCasting;
 
 
 class UserAPI {
+
     public Object getUser(String username, String password) {
         // In real-world applications, this is where you would check the username and password,
         // possibly against a database. If they are valid, you would return the corresponding User object.

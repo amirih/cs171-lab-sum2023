@@ -35,19 +35,21 @@ public class MultipleInheritance {
         System.out.println("classA instanceof ClassA?" + (classA instanceof ClassA ? " yes" : "  no"));
         System.out.println("classA instanceof ClassB?" + (classA instanceof ClassB ? " yes" : "  no"));
         System.out.println("classA instanceof ClassC?" + (classA instanceof ClassC ? " yes" : "  no"));
+        System.out.println("classA instanceof Object?" + (classA instanceof Object? " yes":"no"));
 //        System.out.println("classA instanceof ClassD?" + (classA instanceof ClassD ? " yes" : "  no")); //compile error
 //        System.out.println("classA instanceof ClassE?" + (classA instanceof ClassE ? " yes" : "  no")); //compile error
 //        System.out.println("classA instanceof ClassF?" + (classA instanceof ClassF ? " yes" : "  no")); //compile error
 
         ClassB classB = new ClassB();
         System.out.println("classB instanceof InterfaceA?" + (classB instanceof InterfaceA ? " yes" : "  no"));
-        System.out.println("classB instanceof InterfaceA?" + (classB instanceof InterfaceB ? " yes" : "  no"));
+        System.out.println("classB instanceof InterfaceB?" + (classB instanceof InterfaceB ? " yes" : "  no"));
         System.out.println("classB instanceof ClassA?" + (classB instanceof ClassA ? " yes" : "  no"));
         System.out.println("classB instanceof ClassB?" + (classB instanceof ClassB ? " yes" : "  no"));
         System.out.println("classB instanceof ClassC?" + (classB instanceof ClassC ? " yes" : "  no"));
 //        System.out.println("classB instanceof ClassD?" + (classB instanceof ClassD ? " yes" : "  no")); //compile error
 //        System.out.println("classB instanceof ClassE?" + (classB instanceof ClassE ? " yes" : "  no")); //compile error
 //        System.out.println("classB instanceof ClassF?" + (classB instanceof ClassF ? " yes" : "  no")); //compile error
+        System.out.println("classB instanceof Object?" + (classB instanceof Object? " yes":"no"));
 
         ClassC classC = new ClassC();
         System.out.println("classC instanceof InterfaceA?" + (classC instanceof InterfaceA ? " yes" : "  no"));
@@ -58,6 +60,7 @@ public class MultipleInheritance {
 //        System.out.println("classC instanceof ClassD?" + (classC instanceof ClassD ? " yes" : "  no")); //compile error
 //        System.out.println("classC instanceof ClassE?" + (classC instanceof ClassE ? " yes" : "  no")); //compile error
 //        System.out.println("classC instanceof ClassF?" + (classC instanceof ClassF ? " yes" : "  no")); //compile error
+        System.out.println("classC instanceof Object?" + (classC instanceof Object? " yes":"no"));
 
         ClassD classD = new ClassD();
         System.out.println("classD instanceof InterfaceA?" + (classD instanceof InterfaceA ? " yes" : "  no"));
@@ -68,6 +71,7 @@ public class MultipleInheritance {
         System.out.println("classD instanceof ClassD?" + (classD instanceof ClassD ? " yes" : "  no"));
         System.out.println("classD instanceof ClassE?" + (classD instanceof ClassE ? " yes" : "  no"));
         System.out.println("classD instanceof ClassF?" + (classD instanceof ClassF ? " yes" : "  no"));
+        System.out.println("classD instanceof Object?" + (classD instanceof Object? " yes":"no"));
 
         ClassE classE = new ClassE();
         System.out.println("classE instanceof InterfaceA?" + (classE instanceof InterfaceA ? " yes" : "  no"));
@@ -78,6 +82,7 @@ public class MultipleInheritance {
         System.out.println("classE instanceof ClassD?" + (classE instanceof ClassD ? " yes" : "  no"));
         System.out.println("classE instanceof ClassE?" + (classE instanceof ClassE ? " yes" : "  no"));
         System.out.println("classE instanceof ClassF?" + (classE instanceof ClassF ? " yes" : "  no"));
+        System.out.println("classE instanceof Object?" + (classE instanceof Object? " yes":"no"));
 
         ClassF classF = new ClassF();
         System.out.println("classF instanceof InterfaceA?" + (classF instanceof InterfaceA ? " yes" : "  no"));
@@ -88,5 +93,7 @@ public class MultipleInheritance {
         System.out.println("classF instanceof ClassD?" + (classF instanceof ClassD ? " yes" : "  no"));
         System.out.println("classF instanceof ClassE?" + (classF instanceof ClassE ? " yes" : "  no"));
         System.out.println("classF instanceof ClassF?" + (classF instanceof ClassF ? " yes" : "  no"));
+        System.out.println("classF instanceof Object?" + (classF instanceof Object? " yes":"no"));
+
     }
 }

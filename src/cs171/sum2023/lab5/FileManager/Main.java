@@ -13,6 +13,6 @@ public class Main {
 
         String content = "Hello World!";
         fileManager.write("src/test.txt", content);
-        fileManager.read("src/input1.txt");
+        fileManager.read("src/test.txt");
     }
 }
