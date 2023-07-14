@@ -1,4 +1,4 @@
-package cs171.sum2023.Lab5.MultipleInheritance;
+package cs171.sum2023.lab5.MultipleInheritance;
 
 
 interface InterfaceA {

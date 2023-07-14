@@ -20,7 +20,7 @@
 - **Use in collections:** Collections in Java (like ArrayList, HashMap, etc.) can't use primitive types like int. So if you want to store your numbers in a collection, you'll have to use Integer instead.
 - **Use with generics:** Java's generic system doesn't support primitives. So, if you are using a generic class, you need to use the wrapper classes (like Integer) instead of the primitive types (like int).
 
-**see cs171.sum2023.Lab5.Boxing**
+**see cs171.sum2023.lab5.Boxing**
 ### Multiple Inheritance
 - You can extend only one class
 
@@ -35,17 +35,17 @@
       class ClassD extends ClassC implements InterfaceA, InterfaceB{} // is valid
       class ClassD implements InterfaceA, InterfaceB{}
 
-**see cs171.sum2023.Lab5.MultipleInheritance**
+**see cs171.sum2023.lab5.MultipleInheritance**
 
 ### Type Casting:
 
-**see cs171.sum2023.Lab5.TypeCasting**
+**see cs171.sum2023.lab5.TypeCasting**
 
 Practice:
-1. Write your own version of **cs171.sum2023.Lab5.MultipleInheritance**
-2. BookAPI: **cs171.sum2023.Lab5.BookAPI**
+1. Write your own version of **cs171.sum2023.lab5.MultipleInheritance**
+2. BookAPI: **cs171.sum2023.lab5.BookAPI**
        
        public class Book extends BookAbstract implements Readable, Scanable{}
-3. Advanced FileManager: **cs171.sum2023.Lab5.FileManager**
+3. Advanced FileManager: **cs171.sum2023.lab5.FileManager**
 
    public class AdvancedFileManager extends FileManager implements Customizable {}
