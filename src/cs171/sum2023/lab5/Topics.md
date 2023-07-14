@@ -5,13 +5,14 @@
 
 - Autoboxing in Java is an automatic conversion process that the compiler uses to convert the primitive types to their corresponding object wrapper classes.
     
-      int i = 10;  // primitive data type
-      Integer intObject = i;  // autoboxing
+         int i = 10;  // primitive data type
+         Integer intObject = i;  // autoboxing
 
 - Unboxing is the automatic conversion of wrapper class types to their corresponding primitive types.
        
-      Integer intObject = new Integer(10);  // Integer object
-      int i = intObject;  // unboxing
+         Integer intObject = new Integer(10);  // Depricated
+         Integer intObject = 10;
+         int i = intObject;  // unboxing
 
 #### Why boxing?
 
@@ -24,16 +25,17 @@
 ### Multiple Inheritance
 - You can extend only one class
 
-      class ClassA{}
-      class ClassB{}
-      class C extend ClassB, ClassA{} // Is not valid in Java
+        class ClassA{}
+        class ClassB{}
+        class C extend ClassB, ClassA{} // Is not valid in Java
+
 - You can implement multiple interfaces
 
-      interface InterfaceA{}
-      interface InterfaceB{}
-      class ClassC{}
-      class ClassD extends ClassC implements InterfaceA, InterfaceB{} // is valid
-      class ClassD implements InterfaceA, InterfaceB{}
+        interface InterfaceA{}
+        interface InterfaceB{}
+        class ClassC{}
+        class ClassD extends ClassC implements InterfaceA, InterfaceB{} // is valid
+        class ClassD implements InterfaceA, InterfaceB{}
 
 **see cs171.sum2023.lab5.MultipleInheritance**
 
@@ -41,11 +43,13 @@
 
 **see cs171.sum2023.lab5.TypeCasting**
 
-Practice:
+## Practice:
+
 1. Write your own version of **cs171.sum2023.lab5.MultipleInheritance**
 2. BookAPI: **cs171.sum2023.lab5.BookAPI**
-       
-       public class Book extends BookAbstract implements Readable, Scanable{}
+
+        public class Book extends BookAbstract implements Readable, Scanable{}
+
 3. Advanced FileManager: **cs171.sum2023.lab5.FileManager**
 
-   public class AdvancedFileManager extends FileManager implements Customizable {}
+        public class AdvancedFileManager extends FileManager implements Customizable {}

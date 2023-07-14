@@ -7,6 +7,7 @@ public class Numbers {
         float floatNumber = 1234.56F;
         float anotherFloatNumber=789.123F;
         int intNumber = 345;
+        Integer anotherIntNumber = new Integer(10);
 
         Float floatNumberBox = floatNumber;
         Float anotherFloatNumberBox = anotherFloatNumber;
