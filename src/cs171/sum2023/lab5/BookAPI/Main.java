@@ -16,7 +16,12 @@ class Main {
         System.out.println("Author: " + author);
         System.out.println("Year: " + year);
 
-
+        //Book:
+//        void read(){
+//            readingStarted();
+//            System.out.println("reading book ...");
+//            readingFinished();
+//        }
         book.read();
         book.nextPage();
         book.previousPage();
