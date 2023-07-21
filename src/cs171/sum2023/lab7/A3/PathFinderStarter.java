@@ -7,26 +7,26 @@ import java.util.Scanner;
 public class PathFinderStarter {
 
 
-
     public static void printPath(Position[] path) {
         System.out.println("Path:");
         // TODO
         // Path: (0,0) (0,1) (1,1) (1,2) (1,3) (2,3) (2,4) (3,4) (4,4) (4,3) (4,2) (5,2) (6,2) (6,3) (6,4) (6,5) (6,6)
 
 
-
     }
-    public static Position[] randomPathGenerator(){
+
+    public static Position[] randomPathGenerator() {
         Position[] path = new Position[10];
-        path[0] = new Position(0,0,'X');
-        for (int i=1; i<10; i++){
-            path[i] = new Position(i-1,i,'X');
-            path[i].parent = path[i-1];
+        path[0] = new Position(0, 0, 'X');
+        for (int i = 1; i < 10; i++) {
+            path[i] = new Position(i - 1, i, 'X');
+            path[i].parent = path[i - 1];
         }
 
         return path;
 
     }
+
     public static void printMaze(char[][] maze) {
         System.out.println("Maze: ");
         if (maze == null || maze[0] == null) {
@@ -56,11 +56,12 @@ public class PathFinderStarter {
     }
 
     public static char[][] readMaze(String filename) throws IOException {
-        char[][] maze;
+        char [][] maze;
         Scanner scanner;
-        try {
+        try{
             scanner = new Scanner(new FileInputStream(filename));
-        } catch (IOException ex) {
+        }
+        catch(IOException ex){
             System.err.println("*** Invalid filename: " + filename);
             return null;
         }
@@ -68,9 +69,28 @@ public class PathFinderStarter {
         int N = scanner.nextInt();
         scanner.nextLine();
         maze = new char[N][N];
-        // TODO
+        int i=0;
+        while(i < N && scanner.hasNext()){
+            String line =  scanner.nextLine();
+            String [] tokens = line.split("\\s+");
+            int j = 0;
+            for (; j< tokens.length; j++){
+                maze[i][j] = tokens[j].charAt(0);
+            }
+            if(j!=N){
+                System.err.println("*** Invalid line: " + i + " has wrong # columns: " + j);
+                return null;
+            }
+            i++;
+        }
+        if(i!=N){
+            System.err.println("*** Invalid file: has wrong number of rows: " + i);
+            return null;
+        }
         return maze;
+
     }
+
     // main method: reads in maze file and finds path using both stackSearch and queueSearch
     public static void main(String[] args) throws IOException {
         if (args.length < 1) {
@@ -80,11 +100,12 @@ public class PathFinderStarter {
         String mazePath = args[0];
 //        String mazePath = "src/cs171/sum2023/lab7/A3/maze2.txt";
         char[][] maze;
-        maze = readMaze(mazePath);
-        printMaze(maze);
         Position[] randomPath = randomPathGenerator();
-        System.out.println("Random Path");
         printPath(randomPath);
+        maze = readMaze(mazePath);
+//        printMaze(maze);
+//        System.out.println("Random Path");
+
 
     }
 
