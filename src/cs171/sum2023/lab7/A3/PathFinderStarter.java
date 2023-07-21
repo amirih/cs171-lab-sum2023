@@ -89,7 +89,8 @@ public class PathFinderStarter {
         }
         return maze;
 
-    }
+
+        }
 
     // main method: reads in maze file and finds path using both stackSearch and queueSearch
     public static void main(String[] args) throws IOException {
@@ -103,10 +104,32 @@ public class PathFinderStarter {
         Position[] randomPath = randomPathGenerator();
         printPath(randomPath);
         maze = readMaze(mazePath);
-//        printMaze(maze);
-//        System.out.println("Random Path");
+        printMaze(maze);
+
+        Position [] path = stackSearch(maze);
+        if( path == null ){
+            System.out.println("Maze is NOT solvable (no valid path identified in stackSearch).");
+        } else {
+            System.out.println("stackSearch Solution:");
+            printPath(path);
+            printMaze(maze);
+        }
 
 
+    }
+
+    public static Position[] stackSearch(char[][] maze) {
+        //initialize the stack
+        //push maze (0, 0) to stack
+        //while loop on stack{
+        //check the point if is, Exit, path, etc. Mark it as visited('.') or path ('X')
+
+        //add neighbors to the stack bottom, right, top, left
+
+
+        //while loop
+
+        return null;
     }
 
 }
