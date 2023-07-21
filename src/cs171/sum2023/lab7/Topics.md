@@ -13,3 +13,6 @@ Practice:
 - A3.PathFinder.printMaze 
 - A3.PathFinder.readMaze
 
+Extra Credit: 
+
+Implement RedoMore and CommandLineRedoMore and add it to undoMore. So your implementation can apply both redo and undo 
