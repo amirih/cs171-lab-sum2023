@@ -19,4 +19,9 @@ Practice:
 Extra Credit:
 
 Implement your own Stack with generics and make up for one of your open issues
-- cs171.sum2023.lab6.Bouncer
+- cs171.sum2023.lab6.Bonus
+- 
+  public interface Table<T extends Card, E extends GeneralPlayer> {
+public void checkPlaces(E player);
+  public void checkPlaces(CardPlayer player) {
+- public class CardTable implements Table<Card, CardPlayer> {

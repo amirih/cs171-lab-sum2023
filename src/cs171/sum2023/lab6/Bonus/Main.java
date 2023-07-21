@@ -1,4 +1,4 @@
-package cs171.sum2023.lab6.Bouncer;
+package cs171.sum2023.lab6.Bonus;
 
 public class Main {
     public static void main(String[] args) {
