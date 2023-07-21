@@ -3,7 +3,7 @@ package cs171.sum2023.lab7.A3;
 class Position{
     public int i;     //row
     public int j;     //column
-    public char val;  //1, 0, or 'X'
+    public char val;  //1, 0, or 'X', '.'
 
     // reference to the previous position (parent) that leads to this position on a path
     Position parent;
