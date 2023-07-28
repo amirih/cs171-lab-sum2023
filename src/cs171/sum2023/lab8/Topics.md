@@ -5,11 +5,21 @@ Agenda
 - CurrentDirectory
 - TaskManager
 - A4 Starter Code
-- Sort;
+- Sort
+  - BubbleSort was implemented in lab4
+  - Implement InsertionSort 
+  - Implement SelectionSort
+  - Implement QuickSort
+  - Implement MergeSort
+  - Study HeapSort on your own
 
 
 
 Practice 
 
-You are working on A3 and A4, just practice today lab and push them to  you repo. 
+Great job!
+
+Practice today lab and push your solution to  you repo.
+lab8 and lab 9 Due: August 2, 11:59 PM
+
 
