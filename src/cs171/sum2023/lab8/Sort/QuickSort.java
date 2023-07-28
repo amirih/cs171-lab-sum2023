@@ -1,7 +1,7 @@
 package cs171.sum2023.lab8.Sort;
 public class QuickSort {
     int partition(int arr[], int low, int high) {
-        // implement by your self and look at my screen
+        // TODO: implement by your self and look at my screen
         return 0;
     }
 

@@ -1,7 +1,7 @@
 package cs171.sum2023.lab8.Sort;
 public class MergeSort {
     void merge(int arr[], int l, int m, int r) {
-       // implement by your self and look at my screen
+       // TODO: implement by your self and look at my screen
     }
 
     void sort(int arr[], int l, int r) {
