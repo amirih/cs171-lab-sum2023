@@ -9,7 +9,16 @@ public class TaskManager {
 
     // Add a new task to the end of the linked list
     public void addTask(String taskName) {
-
+        Task newTask = new Task(taskName);
+        if (head == null) {
+            head = newTask;
+        } else {
+            Task current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newTask;
+        }
     }
 
     // Remove a task with the given name from the linked list
@@ -23,7 +32,7 @@ public class TaskManager {
     }
 
     public static void main(String[] args) {
-        TaskManager taskManager = new TaskManager();
+        TaskManagerSolution taskManager = new TaskManagerSolution();
 
         // Adding tasks
         taskManager.addTask("Complete project report");

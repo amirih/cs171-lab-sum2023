@@ -17,6 +17,7 @@ public class CurrentDirectory {
 
         char[][] mazeOne = cs171.sum2023.lab7.A3.PathFinderStarter.readMaze(mazeOneAbsolutePath);
         char[][] mazeTwo = cs171.sum2023.lab7.A3.PathFinderStarter.readMaze("src/cs171/sum2023/lab7/A3/maze2.txt");
+        char[][] mazeRoot = cs171.sum2023.lab7.A3.PathFinderStarter.readMaze("maze1.txt");
 
     }
 }

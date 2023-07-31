@@ -51,7 +51,7 @@ public class TaskManager {
         Task slow = head;
         Task fast = head;
 
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             temp = slow;
             slow = slow.next;
             fast = fast.next.next;
@@ -72,13 +72,16 @@ public class TaskManager {
 
         // base cases
 
+
         // pick either a or b and recur
 
         return result;
     }
+
     public void reverseTasks() {
 
     }
+
     public static void main(String[] args) {
         TaskManagerSolution taskManager = new TaskManagerSolution();
 

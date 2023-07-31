@@ -1,70 +1,8 @@
+# CS 171 | Lab 9
+
+- CleanCode.pdf
+- package cs171.sum2023.lab9.TaskManager;
+- package cs171.sum2023.lab9.ReverseString;
+- package cs171.sum2023.lab9.PostFix;
+- package cs171.sum2023.lab9.ClearList;
 - package cs171.sum2023.lab9.API;
-
-        <dependencies>
-            <!-- ... other dependencies ... -->
-            <dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>4.9.2</version> <!-- use the latest version -->
-            </dependency>
-        </dependencies>
-
-Then your implementation will be:
-
-      import okhttp3.OkHttpClient;
-      import okhttp3.Request;
-      import okhttp3.Response;
-
-      public class APICall {
-      private static final String API_URL = "https://api.example.com/data"; // replace with your API URL
-
-      public static void main(String[] args) throws Exception {
-          OkHttpClient client = new OkHttpClient();
-
-          Request request = new Request.Builder()
-            .url(API_URL)
-            .build(); // defaults to GET
-
-              try (Response response = client.newCall(request).execute()) {
-                  System.out.println(response.body().string());
-              }
-          }
-      }
-
-Or another library:
-
-    <dependencies>
-        <!-- ... other dependencies ... -->
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.13</version> <!-- use the latest version -->
-        </dependency>
-    </dependencies>
-
-Your implementation will be:
-
-    import org.apache.http.HttpEntity;
-    import org.apache.http.HttpResponse;
-    import org.apache.http.client.methods.HttpGet;
-    import org.apache.http.impl.client.CloseableHttpClient;
-    import org.apache.http.impl.client.HttpClients;
-    import org.apache.http.util.EntityUtils;
-
-    public class APICall {
-    private static final String API_URL = "https://api.example.com/data"; // replace with your API URL
-    
-        public static void main(String[] args) throws Exception {
-            CloseableHttpClient httpClient = HttpClients.createDefault();
-            HttpGet request = new HttpGet(API_URL);
-    
-            HttpResponse response = httpClient.execute(request);
-    
-            System.out.println("Response Code : " + response.getStatusLine().getStatusCode());
-    
-            HttpEntity entity = response.getEntity();
-            String result = EntityUtils.toString(entity);
-    
-            System.out.println(result);
-        }
-    }
